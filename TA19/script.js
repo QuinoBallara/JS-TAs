@@ -44,11 +44,11 @@ emptyFields.textContent = "Los campos no deben estar vacíos";
 function notEmptyFields() {
     let i = 0
     if (username.value.length > 0 && password.value.length > 0 && mail.value.length > 0) {
-        if (emptyFields.parentElement == userbox) {
-            userbox.removeChild(emptyFields);
+        if (emptyFields.parentElement == mailbox) {
+            mailbox.removeChild(emptyFields);
         }
     } else {
-        userbox.appendChild(emptyFields);
+        mailbox.appendChild(emptyFields);
     }
 }
 
